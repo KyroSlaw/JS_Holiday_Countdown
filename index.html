@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Příští státní svátek</h1>
+        
+        <div class="country-selector">
+            <button class="country-btn" data-code="CZ">🇨🇿 Česko</button>
+            <button class="country-btn" data-code="US">🇺🇸 USA</button>
+            <button class="country-btn" data-code="DE">🇩🇪 Německo</button>
+        </div>
+
+        <div id="info-panel" class="hidden">
+            <h2 id="holiday-name">---</h2>
+            <p id="holiday-date">---</p>
+            
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><label>Dny</label></div>
+                <div class="time-box"><span id="hours">00</span><label>Hodiny</label></div>
+                <div class="time-box"><span id="minutes">00</span><label>Minuty</label></div>
+                <div class="time-box"><span id="seconds">00</span><label>Sekundy</label></div>
+            </div>
+        </div>
+
+        <div id="loader" class="hidden">Načítám data...</div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
